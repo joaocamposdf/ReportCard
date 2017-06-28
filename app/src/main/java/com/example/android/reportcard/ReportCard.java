@@ -1,8 +1,6 @@
 package com.example.android.reportcard;
 
-import android.support.v7.app.AppCompatActivity;
-
-public class ReportCard extends AppCompatActivity {
+public class ReportCard {
 
     private String studentName;
     private String year;
@@ -39,6 +37,7 @@ public class ReportCard extends AppCompatActivity {
     }
 
     public void setPhysics(int physics) {
+        if (physics>=0)
         this.physics = physics;
     }
 
@@ -47,14 +46,16 @@ public class ReportCard extends AppCompatActivity {
     }
 
     public void setEnglish(int english) {
+        if (english>=0)
         this.english = english;
     }
 
-    public int getMaths(){
+    public int getMaths() {
         return maths;
     }
 
-    public void setMaths (int maths){
+    public void setMaths(int maths) {
+        if (maths>=0)
         this.maths = maths;
     }
 
